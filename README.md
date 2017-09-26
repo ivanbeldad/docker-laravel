@@ -1,6 +1,6 @@
 # Docker Laravel
 
-Docker image ready to create laravel applications
+Docker image ready to create and develop laravel applications.
 
 ## Create new app
 
