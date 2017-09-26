@@ -1,6 +1,4 @@
 # Docker Laravel
-[![Docker Stars](https://img.shields.io/docker/stars/_/ubuntu.svg)]()
-[![Docker Stars](https://img.shields.io/imagelayers/image-size/microscaling/imagelayers-api/latest.svg)]()
 Docker image ready to create and develop laravel applications.
 
 ## Create new app
