@@ -5,7 +5,7 @@ cd /app
 
 if [ "$1" = "create" ] ; then
     # Create new laravel project
-    laravel new
+    laravel new -n
 
     # Generate IDE helper
     composer require -n --dev barryvdh/laravel-ide-helper
@@ -15,6 +15,7 @@ if [ "$1" = "create" ] ; then
 
     # Copy README
     cp ${DOCKER_FILES}/README.md ./README.md
+    cp ${DOCKER_FILES}/Server.php ./app/Console/Commands/Server.php
 
     # Initialize repository
     git init
@@ -26,8 +27,6 @@ if [ "$1" = "create" ] ; then
     printf "Application Ready! Enjoy coding!! : )"
     printf "\n"
     sh
-elif [ "$1" = "serve" ] ; then
-    php artisan serve --host 0.0.0.0 --port 8000
 elif [ "$1" = "help" ] ; then
     echo "Are you searching for help? Keep waiting friend!"
 else
